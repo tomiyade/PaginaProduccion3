@@ -1,0 +1,585 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;  
+  overflow-x: hidden;  
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ .titulos a{
+  text-decoration: none;
+  color: #000;
+ }  
+  
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.navbar .title {
+  font-size: 24px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  margin-left: 10px;
+  border-right: 1px solid #555;
+  padding-right: 15px;
+}
+
+.navbar .nav-links a:last-child {
+  border-right: none;
+}
+
+.navbar .user-icon a {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.navbar a:hover, .navbar .user-icon a:hover {
+  color: #4a54e1; 
+}
+
+.navbar .user-icon {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+  
+
+
+  /* Cards */
+  .gallery-title {
+    text-align: left;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+
+  .gallery-title a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 20%;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+
+  .card-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .card:hover .card-title {
+    opacity: 1;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+  }
+
+  .modal-image {
+    width: 30%;
+  }
+
+  .modal-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-text {
+    width: 70%;
+    padding-left: 20px;
+  }
+
+  .modal-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px; 
+
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+
+  
+/* Obra del dia */
+  .container-obra {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #6F7166;
+  }
+  .titulo-principal-obra {
+    text-align: left;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+
+  .titulo-principal-obra a{
+    text-decoration: none;
+    color: #000;
+  }
+
+
+  .content-obra {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+  }
+
+  .imagen-obra {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .imagen-obra img {
+    width: 100%;
+    height: auto; 
+  }
+
+  .descripcion-obra {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .descripcion-obra h2 {
+    margin-top: 100px;
+    text-align: left;
+    color: #ffff;
+  }
+
+  .descripcion-obra p {
+    margin-top: 20px;
+    color: #ffff;
+  }
+
+
+ /* FOOTER */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+}
+
+.content {
+  flex: 1; 
+  padding: 20px;
+  background-color: #f4f4f4; 
+}
+
+.footer {
+  width: 100%;
+  height: 100px; 
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-section {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-section p {
+  margin-top: 5px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+
+/* Formulario */
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura completa de la ventana para centrar el formulario verticalmente */
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); /* Degradado de fondo */
+  background-image: url(/img/Karawane.png);
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px; /* Ancho máximo más adecuado para formularios */
+  padding: 30px; /* Padding amplio para un aspecto mejorado */
+  background-color: rgba(32, 38, 44, 0.9); /* Ligeramente transparente para permitir que se vea el degradado */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para el contenedor */
+  border-radius: 8px; /* Bordes redondeados para un diseño suave */
+  margin: 20px; /* Margen para evitar que el contenedor toque los bordes de la pantalla */
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px; /* Más espacio bajo el título para separación */
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Asegura que los inputs ocupen todo el espacio disponible */
+  padding: 10px;
+  margin-bottom: 15px; /* Espacio entre campos */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 150px; /* Altura adecuada para escribir mensajes más largos */
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Color brillante para el botón */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* Un tono más oscuro al pasar el mouse */
+}
+
+
+
+/* GALERIA */
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #262626;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(46, 52, 64, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+
+
+
+
+.body-historia {
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+  flex-direction: column;
+  transform: rotate(-1deg);
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+}
+
+.section:nth-child(even) {
+  flex-direction: column-reverse;
+  transform: rotate(1deg);
+  background-color: #222;
+  color: #fff;
+}
+
+.text, .image {
+  margin: 10px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.text {
+  border: 2px dashed #ff6347;
+  padding: 20px;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 5px solid #ff6347;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+
+/* LOGIN */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #262626 0%, rgb(37, 52, 56) 100%); /* Fondo degradado */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 360px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.95); /* Ligeramente transparente */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center; /* Centrado de texto para el título y botones */
+}
+
+.login-form h2 {
+  color: #333;
+  margin-bottom: 20px; /* Espacio bajo el título */
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  color: #555;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #262626; /* Borde colorido */
+  border-radius: 5px;
+  box-sizing: border-box; /* Incluye padding y border en el width */
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #262626; /* Cambio de color al enfocar */
+  outline: none;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: #262626; /* Botón colorido para inicio de sesión */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-form button:hover {
+  background-color: #262626;
+}

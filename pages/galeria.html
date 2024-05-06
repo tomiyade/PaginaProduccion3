@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Galeria</title>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="title"><a href="../index.html">Dadaismo</a></div>
+      <div class="nav-links">
+        <a href="./artistas.html">Artistas</a>
+        <a href="./galeria.html">Galeria</a>
+        <a href="./historia.html">Historia</a>
+        <a href="./contacto.html">Contacto</a>
+        <div class="user-icon">
+          <a href="./sesion.html"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="galeria">
+        <h1>Galeria</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen" onclick="openModal('Modal1')">
+                <img src="../img/Ubu_Imperator.jpg" alt="">
+                <div class="overlay">
+                    <h2>Ubu Imperator</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal2')">
+                <img src="../img/MechanicalHead-Hausmann.jpg" alt="">
+                <div class="overlay">
+                    <h2>Mechanical Head</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal3')">
+                <img src="../img/the-art-critics.jpeg" alt="">
+                <div class="overlay">
+                    <h2>The ar critic</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal4')">
+                <img src="../img/fountain.webp" alt="">
+                <div class="overlay">
+                    <h2>Fountain</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal5')">
+                <img src="../img/bicycle-wheel.jpg" alt="">
+                <div class="overlay">
+                    <h2>Bicylce Wheel</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal6')">
+                <img src="../img/before-my-birth-1914.jpg" alt="">
+                <div class="overlay">
+                    <h2>Before My Birth</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal7')">
+                <img src="../img/flight.webp" alt="">
+                <div class="overlay">
+                    <h2>Flight</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal8')">
+                <img src="../img/portrait-of-a-man.jpg" alt="">
+                <div class="overlay">
+                    <h2>Portrait of a Man</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal9')">
+                <img src="../img/TheSKittlePicture.webp" alt="">
+                <div class="overlay">
+                    <h2>The Skittle Picture</h2>
+                </div>
+            </div>
+            <div class="imagen" onclick="openModal('Modal10')">
+              <img src="../img/LHOOQ.webp" alt="">
+              <div class="overlay">
+                  <h2>L.H.O.O.Q.</h2>
+              </div>
+          </div>
+          <div class="imagen" onclick="openModal('Modal11')">
+              <img src="../img/cut-with_mszmx6wKfU1sfbgs2o1_500.jpg" alt="">
+              <div class="overlay">
+                  <h2>Cut with the Kitchen Knife through the Last Weimar Beer-Belly Cultural Epoch in Germany</h2>
+              </div>
+          </div>
+          <div class="imagen" onclick="openModal('Modal12')">
+              <img src="../img/Karawane.png" alt="">
+              <div class="overlay">
+                  <h2>Karawane</h2>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <div id="Modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal1')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/Ubu_Imperator.jpg" alt="Imagen Ubu_Imperator">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Ubu Imperator</h2></div>
+          <p>Ubú Imperator es un cuadro pintado por Max Ernst en 1923. Este óleo sobre tela representa un Padre Ubú rojo en forma de peonza. Está conservada en el Museo nacional de Arte moderno, en París</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal2')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/MechanicalHead-Hausmann.jpg" alt="Imagen MechanicalHead">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Mechanical Head</h2></div>
+          <p>El Espíritu de Nuestra Era. Cabeza Mecánica (Der Geist Unserer Zeit Mechanischer Kopf), es una obra de 1919 de Raoul Hausmann</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal3')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/the-art-critics.jpeg" alt="Imagen the-art-critics">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>The Art Critic</h2></div>
+          <p>The Art Critic es una obra de 1919-1920 de Raoul Hausmman</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal4')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/fountain.webp" alt="Imagen fountain">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Fountain</h2></div>
+          <p>Fountain es un readymade, de Marcel Duchamp creado en 1917, pieza fundacional de una manifestación artística consistente en la utilización de objetos ya existentes y que normalmente no se consideran artísticos, dotándolos de un nuevo significado.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal5')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/bicycle-wheel.jpg" alt="Imagen bicycle-wheel">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Bicycle Wheel</h2></div>
+          <p>Rueda de bicicleta (originalmente en francés, Roue de bicyclette) es un objeto de arte encontrado del artista francés Marcel Duchamp, que consiste en una rueda de bicicleta en su horquilla sobre un taburete de madera.
+            <br>
+            En 1913, en su estudio en París, él montó la rueda invertida verticalmente (es decir, la parte que tradicionalmente va arriba hacia abajo, y viceversa) sobre un taburete alto de madera.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal6')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/before-my-birth-1914.jpg" alt="Imagen before-my-birth-1914">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Before my Birth</h2></div>
+          <p>Before my Birth es una obra de Jean Han Arps creada en 1914</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal7" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal7')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/flight.webp" alt="Imagen flight">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Flight</h2></div>
+          <p>Flight es una obra creda por la artista Hanna Höch en 1931</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal8" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal8')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/portrait-of-a-man.jpg" alt="Imagen portrait-of-a-man">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Portrait of a Man</h2></div>
+          <p>Portrait of a Man es una obra de Theo van Doesburg hecha en 1915</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal9" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal9')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/TheSKittlePicture.webp" alt="Imagen TheSKittlePicture">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>The Skittle Picture</h2></div>
+          <p>Kurt Schwitters Merz creo esta obra en 1921</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal10" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal10')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/LHOOQ.webp" alt="Imagen LHOOQ">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>L.H.O.O.Q.</h2></div>
+          <p>L.H.O.O.Q. es una obra de arte de Marcel Duchamp realizada en 1919. Es uno de los ready-mades de Duchamp.  En esta obra el objeto es una tarjeta postal barata con una reproducción de la conocida obra de Leonardo da Vinci, la Mona Lisa, a la que Duchamp dibujó un bigote y una perilla con lápiz y le puso un título.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Modal11" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal11')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/cut-with_mszmx6wKfU1sfbgs2o1_500.jpg" alt="Imagen bicycle-wheel">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Cut with the Kitchen Knife through the Last Weimar Beer-Belly Cultural Epoch in Germany</h2></div>
+          <p>Esta obra fue creada por Hannah Höch en 1919 y este fotomontaje es una crítica política y social que combina imágenes de la prensa, ilustrando de forma caótica y crítica los roles de género y la política en la Alemania de posguerra.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="Modal12" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('Modal12')">&times;</span>
+        <div class="modal-image">
+          <img src="../img/Karawane.png" alt="Imagen bicycle-wheel">
+        </div>
+        <div class="modal-text">
+          <div class="modal-title"><h2>Karawane</h2></div>
+          <p>Es un poema sonoro el cual fue creado por Hugo Ball en 1916 y consiste en sonidos sin sentido que desafían las convenciones del lenguaje y la comunicación</p>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-section">
+    <h3>Dadaísmo</h3>
+  </div>
+  <div class="footer-section">
+    <h3>Sobre nosotros</h3>
+    <p>Descubre más sobre nuestro enfoque y la historia del Dadaísmo.</p>
+  </div>
+  <div class="footer-section">
+    <h3>Síguenos</h3>
+    <ul class="social-icons">
+      <li><a href="#" class="fab fa-facebook-f"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li>
+      <li><a href="#" class="fab fa-instagram"></a></li>
+    </ul>
+  </div>
+</footer>
+
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

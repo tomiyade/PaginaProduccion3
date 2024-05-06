@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Dadaismo</title>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="title"><a href="./index.html">Dadaismo</a></div>
+      <div class="nav-links">
+        <a href="./pages/artistas.html">Artistas</a>
+        <a href="./pages/galeria.html">Galeria</a>
+        <a href="./pages/historia.html">Historia</a>
+        <a href="./pages/contacto.html">Contacto</a>
+        <div class="user-icon">
+          <a href="./pages/sesion.html"><i class="fas fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+       
+
+         
+         <!-- Cards Obras -->
+         <div class="gallery-title"><a href="./pages/galeria.html">Obras</a></div>
+         <div class="card-container">   
+            <div class="card" onclick="openModal('Modal1')">
+              <img src="./img/Ubu_Imperator.jpg" alt="Imagen 1">
+              <div class="card-title">Ubu Imperator</div>
+            </div>
+            <div class="card" onclick="openModal('Modal2')">
+              <img src="./img/MechanicalHead-Hausmann.jpg" alt="Imagen 2">
+              <div class="card-title">Mechanical Head</div>
+            </div>
+            <div class="card" onclick="openModal('Modal3')">
+              <img src="./img/the-art-critics.jpeg" alt="Imagen 3">
+              <div class="card-title">The Art Critic</div>
+            </div>
+            <div class="card" onclick="openModal('Modal4')">
+              <img src="./img/fountain.webp" alt="Imagen 4">
+              <div class="card-title">Fountain</div>
+            </div>
+          </div>
+
+
+          <!-- Cards Artistas -->
+          <div class="gallery-title"><a href="./pages/artistas.html">Artistas</a></div>
+         <div class="card-container">   
+            <div class="card" onclick="openModal('Modal5')">
+              <img src="./img/marcleDuchamp.jpeg" alt="Imagen Marcel">
+              <div class="card-title">Marcel Duchamp</div>
+            </div>
+            <div class="card" onclick="openModal('Modal6')">
+              <img src="./img/raoulhausmann.jpeg" alt="Imagen Raoul">
+              <div class="card-title">Raoul Hausmann</div>
+            </div>
+            <div class="card" onclick="openModal('Modal7')">
+              <img src="./img/tristanTzara.jpeg" alt="Imagen Tzara">
+              <div class="card-title">Tristas Tzara</div>
+            </div>
+            <div class="card" onclick="openModal('Modal8')">
+              <img src="./img/Max_Ernst.jpg" alt="Imagen 4">
+              <div class="card-title">Max Ernest</div>
+            </div>
+          </div>
+
+          
+          <!-- Modals -->
+          <div id="Modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal1')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/Ubu_Imperator.jpg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Ubu Imperator</h2></div>
+                <p>Ubú Imperator es un cuadro pintado por Max Ernst en 1923. Este óleo sobre tela representa un Padre Ubú rojo en forma de peonza. Está conservada en el Museo nacional de Arte moderno, en París</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal2')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/MechanicalHead-Hausmann.jpg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Mechanical Head</h2></div>
+                <p>El Espíritu de Nuestra Era. Cabeza Mecánica (Der Geist Unserer Zeit Mechanischer Kopf), es una obra de 1919 de Raoul Hausmann</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal3')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/the-art-critics.jpeg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>The Art Critic</h2></div>
+                <p>The Art Critic es una obra de 1919-1920 de Raoul Hausmman</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal4" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal4')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/fountain.webp" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Fountain</h2></div>
+                <p>Fountain es un readymade, de Marcel Duchamp creado en 1917, pieza fundacional de una manifestación artística consistente en la utilización de objetos ya existentes y que normalmente no se consideran artísticos, dotándolos de un nuevo significado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal5" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal5')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/marcleDuchamp.jpeg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Marcel Duchamp</h2></div>
+                <p>
+                  Marcel Duchamp (1887-1968) fue un artista revolucionario francés cuya obra y pensamiento transformaron radicalmente la comprensión del arte en el siglo XX. Duchamp es más conocido por su enfoque provocador y su desafío a las convenciones del arte tradicional, lo que influyó enormemente en el desarrollo de movimientos de vanguardia como el Dadaísmo y el Surrealismo. 
+                  <br> 
+                  Nacido en Blainville-Crevon, Francia, en una familia que valoraba la cultura artística, Marcel Duchamp comenzó su carrera artística como pintor. Después de estudiar arte en la Académie Julian en París, inicialmente se involucró en el movimiento postimpresionista y el cubismo. Sin embargo, su obra pronto tomó un giro hacia lo que él llamó "arte de ideas", en contraste con el arte visual tradicional basado en la estética y la técnica.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal6" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal6')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/raoulhausmann.jpeg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Raoul Hausmann</h2></div>
+                <p>
+                  Raoul Hausmann fue un influyente artista austríaco conocido por su papel crucial en el desarrollo del movimiento Dadá en Berlín. Nacido en 1886 en Viena, Hausmann se trasladó a Berlín en su juventud, donde más tarde se convertiría en una figura central del movimiento Dadá, un movimiento que buscaba desafiar las convenciones del arte y la cultura establecidas antes y después de la Primera Guerra Mundial. A través de su trabajo, Hausmann exploró una variedad de medios, incluyendo fotomontaje, collage, escultura y performance, utilizando estos para criticar tanto la sociedad burguesa como la emergente cultura de masas.
+                  <br>
+                  Su obra más conocida, el fotomontaje, implicaba la combinación de recortes de fotografías y textos de revistas y periódicos, creando imágenes chocantes que desafiaban las narrativas visuales tradicionales y exponían las tensiones políticas y sociales de su tiempo. Hausmann también fue un teórico prolífico y crítico de arte; sus escritos sobre arte y fotografía han sido influenciales en el campo del arte moderno.
+                  <br>
+                  A lo largo de su carrera, Hausmann mantuvo una actitud crítica hacia el arte convencional y las instituciones culturales, lo que le llevó a cuestionar constantemente el papel del artista en la sociedad. A pesar de que el movimiento Dadá en sí fue de corta duración, su impacto en el arte del siglo XX ha sido duradero, con Hausmann como una de sus figuras más destacadas. Tras la disolución del Dadá, continuó su trabajo en el arte experimental y vivió en varios lugares de Europa antes de su muerte en 1971 en Limoges, Francia. Su legado persiste como un testimonio del poder del arte como medio de crítica y transformación social.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal7" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal7')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/tristanTzara.jpeg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Tristan Tzara</h2></div>
+                <p>
+                  Tristan Tzara, nacido como Samuel Rosenstock en 1896 en Moinești, Rumanía, es mejor conocido como uno de los fundadores del movimiento Dadaísta, un movimiento artístico y literario que comenzó en Zúrich durante la Primera Guerra Mundial. Tzara adoptó su nombre artístico, que evoca su deseo de cambio y su enfoque anti-tradicionalista, cuando se trasladó a Zúrich en 1915.
+                  <br>
+                  En Zúrich, Tzara se convirtió en el centro del movimiento Dada, que se caracterizaba por su oposición a las normas culturales, artísticas y políticas convencionales, y buscaba subvertir las expectativas a través del absurdo, el irracionalismo y el caos. La revuelta de Dada contra el arte y la cultura tradicionales se reflejaba en sus performances, poesías, arte visual y manifestaciones, que a menudo eran provocativas y diseñadas para shockear al público y criticar la sociedad contemporánea, que consideraban responsable de la guerra.
+                  <br>
+                  Tzara escribió varios manifiestos Dada, que ilustraban la incoherencia y la protesta del movimiento contra los valores establecidos. Estos manifiestos, a menudo irónicos y cínicos, desafiaban las convenciones literarias y artísticas y pedían la destrucción de las estructuras culturales y políticas. Además de sus manifiestos, Tzara organizaba eventos y performances en el Cabaret Voltaire, donde Dada había nacido, y en otros lugares de Europa.
+                  <br>
+                  Después de la guerra, Tzara se trasladó a París, donde Dada experimentó su última etapa antes de disolverse, en parte por las tensiones internas entre sus miembros y en parte por el surgimiento del surrealismo, un movimiento que muchos dadáistas adoptaron. A pesar de su involucramiento con el Dada, Tzara eventualmente se unió al Partido Comunista Francés y comenzó a adoptar un enfoque más estructurado hacia su arte y escritura, aunque nunca abandonó completamente su estilo provocativo y experimental.
+                  <br>
+                  Hasta su muerte en 1963, Tzara siguió siendo una figura influyente en el arte y la poesía, contribuyendo significativamente a la literatura del siglo XX y a la teoría del arte de vanguardia. Su trabajo dejó un legado duradero que sigue inspirando a artistas y escritores que buscan desafiar el status quo y explorar nuevas formas de expresión.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="Modal8" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('Modal8')">&times;</span>
+              <div class="modal-image">
+                <img src="./img/Max_Ernst.jpg" alt="Imagen 1">
+              </div>
+              <div class="modal-text">
+                <div class="modal-title"><h2>Max Ernst</h2></div>
+                <p>
+                  Max Ernst fue un pintor y escultor alemán, pionero del movimiento dadaísta en Colonia y posteriormente, uno de los más influyentes exponentes del surrealismo. Nacido en Brühl, Alemania, en 1891, Ernst estudió filosofía, psiquiatría y arte en la Universidad de Bonn. Su interés por el arte fue paralelo a su fascinación por la psicología, en particular por las teorías del psicoanálisis de Freud, lo que tuvo una influencia profunda en su obra.
+                  <br>
+                  Durante la Primera Guerra Mundial, Ernst sirvió en el ejército alemán, y su experiencia en la guerra intensificó su sentimiento de rebelión contra la cultura y la sociedad tradicionales. Después de la guerra, se unió al movimiento dadaísta, utilizando el arte como un medio de protesta. En 1919, Ernst fundó el grupo dadaísta de Colonia y comenzó a explorar técnicas innovadoras como el collage y la técnica del frottage, que involucra hacer rubbings de objetos para crear texturas en sus obras.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Obra del Dia -->
+         <div class="container-obra">
+            <div class="titulo-principal-obra"><a href="">Obra del día</a></div>
+            <div class="content-obra">
+              <div class="imagen-obra">
+                <img src="./img/imagen-obra.JPG" alt="Obra del día">
+              </div>
+              <div class="descripcion-obra">
+                <h2>Shirt Front and Fork</h2>
+                <p>Jean Hans Arp, Shirt Front & Fork, relieve pintado sobre madera, 1924, París, Dada.</p>
+              </div>
+            </div>
+          </div>
+    
+
+    <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-section">
+          <h3>Dadaísmo</h3>
+        </div>
+        <div class="footer-section">
+          <h3>Sobre nosotros</h3>
+          <p>Descubre más sobre nuestro enfoque y la historia del Dadaísmo.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <ul class="social-icons">
+            <li><a href="https://meencanta.com.ar/product-category/productos/para-jugar/vibradores/?gclid=EAIaIQobChMIsteX3r33hQMVIF9IAB1VBAEyEAAYASAAEgIUp_D_BwE" class="fab fa-facebook-f"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-instagram"></a></li>
+          </ul>
+        </div>
+      </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
