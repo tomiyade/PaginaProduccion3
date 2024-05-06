@@ -523,7 +523,7 @@ img {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #262626 0%, rgb(37, 52, 56) 100%); /* Fondo degradado */
+  background: linear-gradient(to right, #262626 0%, rgb(37, 52, 56) 100%); 
 }
 
 .login-container {
